@@ -1,0 +1,47 @@
+[
+    {
+      "_id": {
+        "$oid": "678d1abf2e9b605628fbae1a"
+      },
+      "name": "Digital Goods",
+      "slug": "digital",
+      "icon": "digital",
+      "parents": []
+    },
+    {
+      "_id": {
+        "$oid": "678d1ade2e9b605628fbae20"
+      },
+      "name": "Games and Entertainment",
+      "slug": "game",
+      "icon": "game",
+      "parents": []
+    },
+    {
+      "_id": {
+        "$oid": "678d1afa2e9b605628fbae26"
+      },
+      "name": "Real Estate",
+      "slug": "home",
+      "icon": "home",
+      "parents": []
+    },
+    {
+      "_id": {
+        "$oid": "678d1b342e9b605628fbae2c"
+      },
+      "name": "Automotive",
+      "slug": "car",
+      "icon": "car",
+      "parents": []
+    },
+    {
+      "_id": {
+        "$oid": "678d1d312e9b605628fbae4a"
+      },
+      "name": "Service Goods",
+      "slug": "services",
+      "icon": "service",
+      "parents": []
+    }
+  ]

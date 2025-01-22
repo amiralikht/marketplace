@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer tailwind-base, primereact, tailwind-utilities;
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+}
+:root {
+    /* --primary_body_bg: #ffffff;
+    --primary_color: @apply ;
+    --primary_color_hover: var(--blue-600);
+    --primary_color_text: var(--blue-950);
+    --primary_bg_50: var(--blue-100);
+    --primary_color_error: var(--red-500);
+    --primary_gray_100: var(--gray-100); */
+    --primary_popover_bg: #ffffff;
+
+    font-family: "Roboto", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+:root[class="dark"] {
+    --primary_color: var(--p-blue-800);
+    --primary_color_hover: var(--p-blue-600);
+    --primary_color_text: #9fadbc;
+    --primary_bg_50: var(--p-blue-300);
+    --primary_color_error: var(--p-red-500);
+    --primary_body_bg: #1d2125;
+    --primary_gray_100: #9fadbc50;
+    --primary_popover_bg: #23282c;
+    /* 161a1d */
+}
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 95vw;
+    height: 100vh;
+    outline: none;
+    background-color: var(--primary_body_bg);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: rgba(0, 0, 0, 0.062);
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb {
+    /*background: rgba(155, 155, 155, 0.356);
+    */background: rgba(202, 202, 202, 0.705);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+button,input,select {
+    font-family: inherit;
+}
+
+.input{
+    @apply w-full flex rounded-md border items-center shadow-sm focus-within:ring-2 !text-black focus-within:ring-blue-600 transition-all duration-300 ease-in-out my-1 outline-none text-sm p-2 bg-transparent focus:ring-2 focus:ring-blue-600 hover:bg-slate-300/15 p-0
+}
+.input input{
+    @apply !text-black placeholder:text-gray-400 bg-transparent outline-none text-sm font-normal w-full h-full shadow-none p-2
+}
+.secondary_btn{
+    @apply flex box-center rounded-md mx-2 text-slate-950 hover:bg-slate-900/10 p-2 duration-200 ease-in-out text-sm hover:!text-slate-950 transition-all
+}
+
+.box-center{
+    justify-content: center;
+    align-items: center;
+}
+.main_btn{
+    @apply bg-blue-500 text-white text-[14px] p-2 rounded-md transition-all duration-300 ease-in-out text-center flex box-center gap-2
+}
+.main_btn:hover {
+    @apply bg-blue-600 
+
+}

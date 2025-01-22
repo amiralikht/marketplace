@@ -1,0 +1,24 @@
+[{
+    "_id": {
+      "$oid": "659bacbc94a571b122eb3ef5"
+    },
+    "mobile": "4708869147",
+    "otp": {
+      "code": "78812",
+      "expiresIn": 1733081053384,
+      "_id": {
+        "$oid": "674cb7656ecf3aa1c124b116"
+      }
+    },
+    "verifiedMobile": true,
+    "role": "ADMIN",
+    "createdAt": {
+      "$date": "2024-01-08T08:05:16.814Z"
+    },
+    "updatedAt": {
+      "$date": "2024-12-03T20:24:33.362Z"
+    },
+    "__v": 0,
+    "accessToken": "",
+    "refreshToken": ""
+  }]
