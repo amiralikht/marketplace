@@ -2,5 +2,12 @@ import api from "../configs/api";
 
 const getProfile = () => api.get("/user/whoami").then((res)=> res || false);
 
+const getUserPost = () => api.get("/post/my");
 
-export {getProfile}
+const deleteUserPost = (id) => api.delete(`/post/delete/${id}`);
+
+const getAllPosts = () => api.get("");
+
+
+
+export {getProfile, getUserPost, deleteUserPost, getAllPosts}

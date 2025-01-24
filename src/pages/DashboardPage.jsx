@@ -1,7 +1,10 @@
+import AddPost from "../components/templates/AddPost"
 
 function DashboardPage() {
   return (
-    <div>DashboardPage</div>
+    <>
+      <AddPost/>
+    </>
   )
 }
 

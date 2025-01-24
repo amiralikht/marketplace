@@ -1,4 +1,5 @@
 import api from "../configs/api";
+import { removeCookies } from "../utils/cookie";
 
 const sendOtp =  async (mobile) => {
     try {
@@ -16,4 +17,9 @@ const checkOtp = async (mobile, code) => {
         return {error}
     }
 }
-export {sendOtp, checkOtp}
+
+const logOut = () => {
+    removeCookies();
+}
+
+export {sendOtp, checkOtp,logOut}

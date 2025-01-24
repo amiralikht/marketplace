@@ -6,7 +6,7 @@ function Layout({children}) {
   return (
     <>
     <Header/>
-    <div className="min-h-screen p-2">{children}</div>
+    <div className="h-[calc(100vh_-_7rem)] px-2">{children}</div>
     <Footer/>
     </>
   )

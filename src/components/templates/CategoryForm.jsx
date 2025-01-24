@@ -40,7 +40,9 @@ function CategoryForm() {
     );
     return (
         <>
-        <Button label="Adding a new list" icon="pi pi-plus" onClick={() => show()} className="flex items-center gap-2 main_btn mb-4 mt-2" />
+        <div className="w-3/4 mx-auto mt-5">
+            <Button label="Adding a new list" icon="pi pi-plus" onClick={() => show()} className="flex items-center gap-2 main_btn mb-4 mt-2" />
+        </div>
         <Dialog header={headerElement} visible={visible} position={'right'} onHide={() => {if (!visible) return; setVisible(false); }} modal draggable={false} resizable={false} contentClassName="w-[50vw] h-screen px-5" headerClassName="px-5 py-4" dismissableMask={false} blockScroll={true}>
 
             <form onChange={changeHandler} onSubmit={submitHandler} className='w-full h-full overflow-y-hidden px-2'>

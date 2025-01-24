@@ -38,7 +38,7 @@
 body {
     margin: 0 auto;
     padding: 0;
-    width: 95vw;
+    width: 100vw;
     height: 100vh;
     outline: none;
     background-color: var(--primary_body_bg);
@@ -79,7 +79,7 @@ button,input,select {
 .input{
     @apply w-full flex rounded-md border items-center shadow-sm focus-within:ring-2 !text-black focus-within:ring-blue-600 transition-all duration-300 ease-in-out my-1 outline-none text-sm p-2 bg-transparent focus:ring-2 focus:ring-blue-600 hover:bg-slate-300/15 p-0
 }
-.input input{
+.input input, .input textarea, .input select{
     @apply !text-black placeholder:text-gray-400 bg-transparent outline-none text-sm font-normal w-full h-full shadow-none p-2
 }
 .secondary_btn{

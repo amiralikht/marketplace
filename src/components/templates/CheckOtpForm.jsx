@@ -28,8 +28,6 @@ function CheckOtpForm({code, setCode, mobile, setStep,checkedOtpHandler}) {
     setLoading(false);
 
   }
-  // statusText
-  // 4709087528
   return (
     <form onSubmit={submitHandler} className='border shadow-md rounded-md p-5 w-1/3 flex flex-col'>
       <h6 className="my-3 text-lg font-semibold tracking-normal">Confirm the code</h6>

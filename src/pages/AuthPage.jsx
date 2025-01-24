@@ -45,7 +45,7 @@ function AuthPage() {
             {step === 1 && <SendOtpForm changeStepHandler={changeStepHandler} mobile={mobile} setMobile= {setMobile}/>} 
             {step === 2 && <CheckOtpForm code={code} setCode={setCode} mobile={mobile} setStep={setStep} checkedOtpHandler={checkedOtpHandler}/>}
             <Toast ref={toast} position="bottom-left" content={({ message }) => (
-                <section className="p-3 gap-3 shadow-lg border text-black w-fit min-w-[20rem] fadeindown" style={{ borderRadius: '10px' }}>
+                <section className="p-3 gap-3 shadow-lg border text-black w-fit min-w-[20rem] fadeindown bg-white" style={{ borderRadius: '10px' }}>
                     <div className="flex items-center gap-2">
                         <div className={`flex w-fit rounded-full ${message.severity === 'success'? 'bg-green-500/70' : 'bg-red-500/70' }`}>
                             <i className={`pi text-xl ${message.severity === 'success'? 'pi-check-circle text-green-700' : 'text-red-700 pi-times-circle' }`}></i>    

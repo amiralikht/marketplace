@@ -24,7 +24,7 @@ function CategoryList() {
     }
     
     return (
-        <div>
+        <div className="w-3/4 mx-auto">
             {isLoading ? <Loader/> : (
                 data.data.map(item=>(
                     <div key={item._id} className="border rounded-md p-2 flex my-2 hover:shadow-lg hover:ring-2 hover:ring-blue-500 duration-200 ease-in-out cursor-default">

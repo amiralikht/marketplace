@@ -9,6 +9,7 @@ import DashboardPage from "../pages/DashboardPage";
 import AdminPage from "../pages/AdminPage";
 import PageNotFound from "../pages/404";
 import Loader from "../components/modules/loader";
+import UserListPage from "../pages/UserListPage";
 
 
 function Router() {
@@ -20,6 +21,7 @@ function Router() {
     <Routes>
         <Route index element={<HomePage/>}/>
         <Route path="/dashboard" element={data ? <DashboardPage/> : <Navigate to="/auth"/>}/>
+        <Route path="/my_list" element={data ? <UserListPage/> : <Navigate to="/auth"/>}/>
         <Route path="/auth" element={data ?<Navigate to="/dashboard"/> :<AuthPage/>}/>
         <Route path="/admin" element={data && data.data.role === "ADMIN" ? <AdminPage/> : <Navigate to="/" />}/>
         <Route path="*" element={<PageNotFound/>}/>
