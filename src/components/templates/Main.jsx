@@ -11,7 +11,7 @@ function Main({posts}) {
         <div className="bg-slate-50 w-full h-full">
             <div className="grid grid-cols-4 gap-4 overflow-y-auto h-full px-5 py-3">
                 {posts.data.posts.map(post=>(
-                    <Link to="#" key={post._id} className="border rounded-md hover:shadow-lg hover:ring-2 hover:ring-blue-500 duration-200 ease-in-out p-1 bg-white ">
+                    <Link to={`/post/${post._id}`} key={post._id} className="border rounded-md hover:shadow-lg hover:ring-2 hover:ring-blue-500 duration-200 ease-in-out p-1 bg-white ">
                         <div className="h-[60%]">
                             <img src={`${baseURL}/${post.images[0]}`} className="w-full h-full object-fill rounded-[5px] shadow border" />
                         </div>

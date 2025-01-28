@@ -10,6 +10,7 @@ import AdminPage from "../pages/AdminPage";
 import PageNotFound from "../pages/404";
 import Loader from "../components/modules/loader";
 import UserListPage from "../pages/UserListPage";
+import PostPage from "../pages/PostPage";
 
 
 function Router() {
@@ -23,6 +24,7 @@ function Router() {
         <Route path="/dashboard" element={data ? <DashboardPage/> : <Navigate to="/auth"/>}/>
         <Route path="/my_list" element={data ? <UserListPage/> : <Navigate to="/auth"/>}/>
         <Route path="/auth" element={data ?<Navigate to="/dashboard"/> :<AuthPage/>}/>
+        <Route path="/post/:id" element={<PostPage/>}/>
         <Route path="/admin" element={data && data.data.role === "ADMIN" ? <AdminPage/> : <Navigate to="/" />}/>
         <Route path="*" element={<PageNotFound/>}/>
         {/* <Route index element={<HomePage/>}/>

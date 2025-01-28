@@ -8,6 +8,7 @@ const deleteUserPost = (id) => api.delete(`/post/delete/${id}`);
 
 const getAllPosts = () => api.get("");
 
+const getPost = (id) => api.get(`/post/${id}`);
 
 
-export {getProfile, getUserPost, deleteUserPost, getAllPosts}
+export {getProfile, getUserPost, deleteUserPost, getAllPosts, getPost}
